@@ -1,0 +1,408 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#f9f9f9;
+  scroll-behavior: smooth;
+  color: #333;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ff6347;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+  color: #ffe4c4;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color:antiquewhite;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.hero-text .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-text .btn:hover {
+  background-color: #0056b3;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+/* Menu Section */
+#menu {
+  margin-top: 50px;
+ 
+}
+
+#menu h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-category {
+  margin-bottom: 50px;
+}
+
+.menu-category h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.card {
+  width: 300px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+.card-img-top {
+  border-radius: 8px 8px 0 0;
+  width: 100%; /* Ensures the image fills the width of the card */
+  height: 200px; /* Fixes the height for consistency */
+  object-fit: cover; /* Ensures the image is properly cropped to fit */
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-radius: 8px 8px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.card-text strong {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.card .btn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #218838;
+}
+
+
+/* Cart Section */
+.cart {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.cart h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff6347;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.cart ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.cart ul li button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart ul li button:hover {
+  background-color: #ff4500;
+}
+
+.cart h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Payment Section */
+.payment {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.payment form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.payment input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.payment button {
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment button:hover {
+  background-color: #218838;
+}
+
+.success-message {
+  font-size: 1.2rem;
+  color: #28a745;
+  padding: 10px;
+  border: 1px solid #28a745;
+  border-radius: 4px;
+  background-color: #e9f8ec;
+}
+
+/* Login and Register Forms */
+.auth-form {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.auth-form h2 {
+  margin-bottom: 20px;
+  color: #ff6347;
+}
+
+.auth-form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background-color: #ff4500;
+}
+
+.auth-form p {
+  margin-top: 10px;
+}
+
+.auth-form a {
+  color: #ff6347;
+  text-decoration: none;
+}
+
+.auth-form a:hover {
+  text-decoration: underline;
+}
